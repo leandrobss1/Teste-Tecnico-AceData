@@ -15,4 +15,9 @@ export const GlobalStyles = createGlobalStyle`
   body {
     font-family: Saira, sans-serif;
   }
+
+  ul {
+    list-style: none;
+
+  }
 `;

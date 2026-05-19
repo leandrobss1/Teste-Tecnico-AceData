@@ -1,23 +1,36 @@
-import { Link } from "react-router-dom";
+import {
+  Container,
+  NavButton,
+  ListItem,
+  UnorderedList,
+  NavMenu,
+  TitleHome,
+} from "./styles";
 
 export default function Home() {
   return (
-    <div>
-      <h1>Home Page</h1>
+    <Container>
+      <TitleHome>Home Page</TitleHome>
 
-      <nav>
-        <ul>
-          <li>
-            <Link to="/salary">Salary Calculator</Link>
-          </li>
-          <li>
-            <Link to="/fibonacci">Fibonacci</Link>
-          </li>
-          <li>
-            <Link to="/sequence">Number Sequence</Link>
-          </li>
-        </ul>
-      </nav>
-    </div>
+      <NavMenu>
+        <UnorderedList>
+          <ListItem>
+            <NavButton to="/salary" className="nav-button">
+              Salary Calculator
+            </NavButton>
+          </ListItem>
+          <ListItem>
+            <NavButton to="/fibonacci" className="nav-button">
+              Fibonacci
+            </NavButton>
+          </ListItem>
+          <ListItem>
+            <NavButton to="/sequence" className="nav-button">
+              Number Sequence
+            </NavButton>
+          </ListItem>
+        </UnorderedList>
+      </NavMenu>
+    </Container>
   );
 }
