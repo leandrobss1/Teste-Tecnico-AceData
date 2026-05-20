@@ -1,12 +1,11 @@
-import { Link } from "react-router-dom";
+import { Container, NavButton } from "../Home/styles";
+import { TitleFibo } from "./styles";
 
 export default function Fibonacci() {
   return (
-    <div>
-      Fibonacci
-      <button>
-        <Link to="/">Retornar</Link>{" "}
-      </button>
-    </div>
+    <Container>
+      <TitleFibo>Fibonacci</TitleFibo>
+      <NavButton to="/">Retornar</NavButton>
+    </Container>
   );
 }

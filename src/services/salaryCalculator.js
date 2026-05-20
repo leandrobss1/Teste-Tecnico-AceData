@@ -30,7 +30,7 @@ export function Calcular() {
   const numFilhos = Number(document.getElementById("numFilhos").value);
 
   if (!valorHora || !horasTrabalhadas) {
-    alert("Não pode haver campos vazios.");
+    alert("Preencha os campos corretamente.");
     return;
   }
 

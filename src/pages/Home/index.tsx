@@ -10,7 +10,7 @@ import {
 export default function Home() {
   return (
     <Container>
-      <TitleHome>Home Page</TitleHome>
+      <TitleHome>AceData</TitleHome>
 
       <NavMenu>
         <UnorderedList>

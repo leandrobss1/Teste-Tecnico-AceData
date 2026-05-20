@@ -1,14 +1,16 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
+export const TitleHome = styled.h1``;
+
+export const ListItem = styled.li``;
+
 export const Container = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 2rem;
 `;
-
-export const TitleHome = styled.h1``;
 
 export const NavMenu = styled.nav`
   display: flex;
@@ -42,5 +44,3 @@ export const UnorderedList = styled.ul`
   flex-direction: column;
   gap: 6px;
 `;
-
-export const ListItem = styled.li``;
