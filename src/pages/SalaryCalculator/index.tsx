@@ -1,42 +1,52 @@
 import { Calcular } from "../../services/salaryCalculator";
-import { Link } from "react-router-dom";
+import { Container, NavButton } from "../Home/styles";
+import {
+  TitleSalary,
+  SalaryDiv,
+  SalaryLabel,
+  SalaryCalc,
+  SalaryInput,
+} from "./styles";
 
 export default function SalaryCalculator() {
   return (
-    <div>
-      <h1>Calculadora de Salário</h1>
+    <Container>
+      <TitleSalary>Calculadora de Salário</TitleSalary>
 
-      <div>
-        <label>Valor por hora R$ : </label>
-        <input
+      <SalaryDiv>
+        <SalaryLabel>Valor por hora R$:</SalaryLabel>
+        <SalaryInput
           id="valorHora"
           type="number"
           min={0}
-          placeholder="Digite o valor por hora"
+          placeholder="Ex: 30"
           required
         />
-      </div>
+      </SalaryDiv>
 
-      <div>
-        <label>Horas trabalhadas no mês : </label>
-        <input
+      <SalaryDiv>
+        <SalaryLabel>Horas trabalhadas no mês : </SalaryLabel>
+        <SalaryInput
           id="horasTrabalhadas"
           type="number"
           placeholder="Ex: 160"
           required
         />
-      </div>
+      </SalaryDiv>
 
-      <div>
-        <label>Filhos menores de 14 anos : </label>
-        <input id="numFilhos" type="number" placeholder="Ex: 2" required />
-      </div>
+      <SalaryDiv>
+        <SalaryLabel>Filhos menores de 14 anos : </SalaryLabel>
+        <SalaryInput
+          id="numFilhos"
+          type="number"
+          placeholder="Ex: 2"
+          required
+        />
+      </SalaryDiv>
 
-      <button onClick={Calcular}>Calcular</button>
+      <SalaryCalc onClick={Calcular}>Calcular</SalaryCalc>
 
-      <button>
-        <Link to="/">Retornar</Link>{" "}
-      </button>
-    </div>
+      <NavButton to="/">Retornar</NavButton>
+    </Container>
   );
 }

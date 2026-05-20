@@ -8,21 +8,22 @@ export const Container = styled.div`
   padding: 2rem;
 `;
 
-export const TitleHome = styled.h1`
-  padding: 1rem;
+export const TitleHome = styled.h1``;
+
+export const NavMenu = styled.nav`
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 `;
 
-export const NavMenu = styled.nav``;
-
 export const NavButton = styled(Link)`
-  width: auto;
+  width: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Source Code Pro", monospace;
   font-weight: 600;
   padding: 12px 16px;
-  margin-bottom: 0.5rem;
   border-radius: 0;
   background-color: #ffff;
   color: #000000;
@@ -39,7 +40,7 @@ export const NavButton = styled(Link)`
 export const UnorderedList = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
 `;
 
 export const ListItem = styled.li``;
